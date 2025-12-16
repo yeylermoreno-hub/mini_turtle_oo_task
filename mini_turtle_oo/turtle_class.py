@@ -4,11 +4,14 @@ class Tortuga:
 
     def adelante(self, pasos):
         self.posicion_x += pasos
-        print(f"Tortuga avanza a la posición {self.posicion_x}")
+        # dibuja la línea en la posición actual
+        print(" " * self.posicion_x + "___")
 
     def abajo(self):
-        print("Tortuga baja una línea")
+        # solo baja una línea, manteniendo la posición
+        print(" " * self.posicion_x + "___")
 
     def reiniciar(self):
         self.posicion_x = 0
-        print("Tortuga reiniciada a la posición 0")
+        print("Tortuga reiniciada")
+
